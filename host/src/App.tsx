@@ -4,11 +4,11 @@ import './App.css'
 
 function App() {
   const onParent = () => {
-    window.parent.postMessage("onParent");
+    window.parent.postMessage("onParent", "http://localhost:42070");
   }
 
   const onOpener = () => {
-    window.opener.postMessage("onOpener");
+    window.opener.postMessage("onOpener", "http://localhost:42070");
   }
 
   const onRedirect = () => {

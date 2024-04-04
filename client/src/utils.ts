@@ -5,8 +5,6 @@ const height = 800;
 const left = window.innerWidth / 2 - width / 2;
 const top = window.innerHeight / 2 - height / 2;
 
-const ignoreList = ["react-renderer-attached", ];
-
 export function open(url: string, label: string) {
   const popup = window.open(url, '', `width=${width}, 
           height=${height}, top=${top}, left=${left}`);

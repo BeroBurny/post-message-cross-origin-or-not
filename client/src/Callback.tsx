@@ -3,8 +3,8 @@ import {useEffect} from "react";
 
 function Callback() {
   const sendMessage = () => {
-    window.parent.postMessage("Callback - Parent");
-    window.opener.postMessage("Callback - Opener");
+    window.parent.postMessage("Callback - Parent", "http://localhost:42070");
+    window.opener.postMessage("Callback - Opener", "http://localhost:42070");
   }
 
   useEffect(() => {
